@@ -13,11 +13,21 @@
 ########################################################################
 
 # Generic LVM image for API32
-generic_lvm:
+generic_lvm_api32:
   type: image
   arch: arm64
   edition: phosh
   variant: phone
   apilevel: 32
+
+  packages: *devtools_packages
+
+# Generic LVM image for API33
+generic_lvm_api33:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 33
 
   packages: *devtools_packages
